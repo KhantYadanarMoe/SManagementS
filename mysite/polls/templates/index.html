@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Register Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    {% load static %} 
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.bundle.min' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+{% block content %}
+    <div class="container-fluid p-4 bg-white text-dark text-center">
+        <img src="https://i.pinimg.com/originals/01/87/f3/0187f3fa3664c915822149c852318fc8.jpg" class="rounded-circle" width="150px" alt="">
+        <h1>Welcome to JKT DIGITAL INSTITUTE</h1>
+        <p>Student Registration Form</p> 
+        <div class="col mt-5">
+          <button class="btn btn-dark mt-3 p-3" type="button"><a href="userpage/">STUDENT ENROLL</a></button>
+          <!--<button class="btn btn-dark mt-3 p-3" type="button"><a href="accounts/login/">LOGIN</a></button>-->
+          <button class="btn btn-dark mt-3 p-3" type="button"><a href="adminpage/">ADMIN</a></button>
+        </div>
+    </div>
+    
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!--Address-->
+        <p>လိပ်စာ - အမှတ် (၈၆_ဘီ)၊ ၃လွှာ-အေ၊ ရှင်စောပုလမ်း၊ Oriental House Restaurant အပေါ်ထပ်၊မြေနီကုန်း City Mart ဘေး၊ စမ်းချောင်း။</p>
+      </section>
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/jktdigital/" target="_blank" role="button"
+          ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png" width="40px" alt=""></a>
+      </section>
+      <section class="mb-4">
+        <!--Contact-->
+        Call Now:  <a href="">+959781886055</a>
+      </section>
+      <section class="mb-4">
+        <!--Website-->
+        Website link:  <a href="https://jktmyanmarint.com/" target="_blank">JKT Myanmar International</a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  </footer>
+ 
+{% endblock %}   
+
+
+</body>
+</html>
